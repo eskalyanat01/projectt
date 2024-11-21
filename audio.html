@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Document</title>
+    <style>
+        .audio1, .audio2, .audio3 {
+            margin-bottom: 20px; /* Adjusts the space between each audio section */
+        }
+
+        .audio1 img, .audio2 img, .audio3 img {
+            display: block; /* Ensures the image is treated as a block element */
+            margin-bottom: 10px; /* Space between the image and audio player */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar open">
+        <img src="./src/public/logo.jpg" width="60" height="60" alt="Logo" title="Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="audio.html">Music</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li class="work"><a href="#">Work &bigtriangledown;</a>
+                <ul>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="math.html">Math</a></li>
+                    <li><a href="api.html">API</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div><a href="https://ku.edu.kz/" target="_blank">Entry</a>
+        
+        <div class = "burger" id = "burger2">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        </div>
+
+    </nav>
+
+    <main class="container-audio">
+        <section class="audio1">
+            <img src="./src/public/harry-styles-reveals-artowork-for-debut-solo-single-sign-of-the-times.webp" width="320" height="200" alt="21 Savage - A Lot">
+            <audio src="./src/public/Harry Styles - Sign Of The Times.mp3" controls type="audio/mp3"></audio>
+        </section>
+        <section class="audio2">
+            <img src="./src/public/bruno.jpg" width="320" height="200" alt="Travis Scott - Goosebumps">
+            <audio src="./src/public/Lady Gaga feat. Bruno Mars - Die With A Smile.mp3" controls type="audio/mp3"></audio>
+        </section>
+        <section class="audio3">
+            <img src="./src/public/800x450.webp" width="320" height="200" alt="Polo G - Pop Out">
+            <audio src="./src/public/mp3-ja-podarju-tebe-landyshi_(muzzonas.ru).mp3" controls type="audio/mp3"></audio>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.facebook.com/Cristiano/" target="_blank"><img src="./src/public/facebook.png" width="60" height="60" alt="Facebook"></a>
+        <a href="https://www.instagram.com/cristiano/" target="_blank"><img src="./src/public/instagram.jpg" width="60" height="60" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@cristiano" target="_blank"><img src="./src/public/youtube.png" width="60" height="60" alt="YouTube"></a>
+    </footer>
+    <script src = "./js/script.js"></script>
+    <script src="./js/api.js"></script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #faf7f7;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar ul li:hover, .navbar div a:hover{
+    background-color: #7cc6e5;
+    border-radius: 10px;
+    transform: scale(1.07);
+    transition: 0.4s ease;
+}
+
+.burger:hover{
+    background-color: #7cc6e5;
+    border-radius: 10px;
+    transform: scale(1.07);
+    transition: 0.4s ease;
+}
+
+.navbar ul li a, .navbar div a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+.navbar div a {
+    padding: 10px;  
+}
+
+.navbar div {
+    display: flex;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.person, .interests {
+    width: 25%;
+    margin: auto;
+}
+
+.container img {
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px gray;
+    width: 50%;
+    height: auto;
+}
+
+.container img:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease;
+    box-shadow: 10px 10px 5px #7cc6e5;
+}
+
+body {
+    background-color: #faf7f7;
+}
+
+main {
+    background: linear-gradient(90deg, rgb(180, 217, 237) 0%, rgba(128, 230, 250, 0.72) 37%, rgb(98, 177, 190) 100%);
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+p:hover {
+    background-color: #7cc6e5;
+}
+
+.container section {
+    width: 100%;
+    margin: auto;
+}
+
+/* Video and Thumbnail Styles */
+.video1, .video2, .video3 {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-thumbnail {
+    margin-bottom: 20px;
+}
+
+.video-thumbnail img {
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #7cc6e5;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.video1 video, .video2 iframe, .video3 iframe {
+    margin: auto;
+}
+
+/* Audio Styles */
+.container-audio {
+    display: flex;
+    flex-direction: column;
+}
+
+.audio1, .audio2, .audio3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.audio1 audio, .audio2 audio, .audio3 audio {
+    width: 60%;
+    margin: auto;
+}
+
+.audio1 img, .audio2 img, .audio3 img {
+    margin: auto;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #7cc6e5;
+}
+
+/* Book Section */
+.container-book {
+    display: flex;
+    flex-direction: column;
+}
+
+.book1, .book2, .book3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.book1 img, .book2 img, .book3 img {
+    margin: auto;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #7cc6e5;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+.book1 a, .book2 a, .book3 a {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.7s ease;
+}
+
+.book1 img:hover, .book2 img:hover, .book3 img:hover {
+    box-shadow: 5px 5px 5px greenyellow;
+}
+
+.book1 a:hover, .book2 a:hover, .book3 a:hover {
+    background-color: #7cc6e5;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a {
+    margin-right: 10px;
+}
+
+/* Burger Menu Styles */
+.burger {
+    display: none;
+}
+
+.bezbazara {
+    border: none;
+    width: 300px;
+    height: 150px;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .person, .interests {
+        width: 100%;
+        margin: 0;
+    }
+
+    .person p {
+        margin: 5px 0 10px 0;
+    }
+
+    .container img {
+        margin-top: 20px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px gray;
+        width: 95%;
+        height: auto;
+    }
+
+    h2 {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .book1 img, .book2 img, .book3 img {
+        width: 95%;
+        height: auto;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .burger span {
+        position: absolute;
+        width: 30px;
+        left: 5px;
+        height: 3px;
+        background-color: black;
+        top:30px;
+    }
+
+    .burger span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .burger span:nth-child(3) {
+        transform: translateY(10px);
+    }
+
+    .navbar ul {
+        position: absolute;
+        background: radial-gradient(circle at top left, rgb(235, 224, 142), rgb(161, 222, 225), rgb(80, 173, 224));
+        flex-direction: column;
+        width: 30%;
+        top: 68px;
+        left: -30%;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        margin-top: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar.open ul {
+        transform: translateX(100%);
+        transition: 0.7s ease-in-out;
+    }
+
+    .navbar.open .burger span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .navbar.open .burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.open .burger span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+    .form form fieldset{
+        width: 80%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .container img {
+        margin-top: 20px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px gray;
+        width: 320px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+.navbar ul .work {
+    position: relative; /* Set the position to relative to enable absolute positioning of its child elements */
+    display: flex; /* Use flexbox for layout */
+    z-index: 10; /* Set stacking order */
+}
+
+.navbar ul .work ul {
+    position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+    flex-direction: column; /* Arrange children in a column */
+    left: 5; /* Align the left edge of the dropdown with the parent */
+    top: 100%; /* Position the top of the dropdown just below the parent */
+    width: 100px; /* Set a fixed width for the dropdown */
+    display: none; /* Initially hide the dropdown */
+    padding: 0; /* Remove default padding */
+    z-index: 20; /* Set a higher stacking order for the dropdown */
+}
+
+.navbar ul .work ul li {
+    z-index: 20; /* Ensure list items have the same stacking order as the parent */
+    background-color: #7cc6e5; /* Set background color */
+    margin-bottom: 2px; /* Add space between items */
+}
+
+.navbar ul .work:hover ul {
+    display: block; /* Show the dropdown when hovering over the parent */
+}
+
+.navbar ul .work ul li:hover {
+    background-color: white; /* Change background color on hover */
+    border-radius: 0; /* Remove border radius */
+}
+
+.navbar ul .work ul {
+    position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+    flex-direction: column; /* Arrange children in a column */
+    left: 0; /* Offset the dropdown 10px from the left of the parent */
+    top: 100%; /* Align the top of the dropdown with the top of the parent */
+    width: 100px; /* Set a fixed width for the dropdown */
+    display: none; /* Initially hide the dropdown */
+    padding: 0; /* Remove default padding */
+    z-index: 20; /* Set a higher stacking order for the dropdown */
+    background-color: red;
+}
+
+.navbar ul .work ul li {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+    background-color: unset; /* Remove default background color */
+    font-size: 1.2rem; /* Increase font size */
+    margin-left: 10px; /* Offset the list item 10px from the left */
+    color: black; /* Set text color to black */
+}
+
+.navbar ul .work ul li:hover {
+    background-color: black; /* Change background color to black on hover */
+}
+
+.navbar ul .work ul li:hover a:hover {
+    color: white; /* Change text color to white when hovering over the link */
+}
+
+.navbar ul .work:hover ul li a {
+    color: black; /* Set text color to black when hovering over the parent */
+}
+
+.form {
+    flex-direction: column; /* Arrange the children of the .form container in a column layout */
+}
+
+.form form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.form form fieldset {
+    display: flex; /* Use flexbox for the fieldset layout */
+    flex-direction: column; /* Arrange fieldset elements in a column */
+    width: 50%; /* Set the width of the fieldset to 50% of the container */
+    margin: auto; /* Center the fieldset horizontally */
+    margin-top: 30px; /* Add a margin of 30px to the top */
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom */
+}
+
+.form form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+}
+
+.form form fieldset legend {
+    text-align: center; /* Center the legend text */
+    font-size: 1.2rem; /* Set the font size of the legend text to 1.2rem */
+    font-weight: bold; /* Make the legend text bold */
+}
+
+.form form button {
+    width: 200px; /* Set the width of the button to 200px */
+    font-size: 1.2rem; /* Set the font size of the button text to 1.2rem */
+    background-color: #24779b; /* Set the background color of the button */
+    color: white; /* Set the text color of the button to white */
+    margin: auto; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add a margin of 20px to the bottom */
+}
+
+.form form button:hover {
+    font-size: 1.2rem; /* Maintain the font size of the button text on hover */
+    background-color: #91130c; /* Change the background color of the button on hover */
+    color: rgb(248, 243, 243); /* Change the text color of the button on hover */
+}
+
+.form form fieldset{
+    width: 65%;
+}
+
+.math{
+    display: flex;
+}
+
+.math form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.math form fieldset{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.math form fieldset legend{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.math form fieldset .counters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.math form fieldset .counters div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.math form fieldset .counters div label, input {
+    margin: auto;
+    text-align: center;
+}
+
+.math form fieldset .counters div input {
+    width: 70%;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.math form fieldset .butcont {
+    display: flex;
+    flex: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.math form fieldset .butcont button {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    height: 40px;
+    margin: auto;
+}
+
+.math form fieldset p {
+    display: flex;
+    margin: 0;
+}
+
+.math form fieldset p span{
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.math form fieldset{
+    width: 70%;
+}
+
+.math form fieldset .trig {
+    display: flex;
+    flex: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.math form fieldset .trig button {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    height: 40px;
+    margin: auto;
+}
+
+.API {
+    display:flex;
+    flex-direction: column;
+}
+
+.API .London {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .London img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Madrid {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .Madrid img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .New_York {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .New_York img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Shymkent {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Shymkent img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Lipetsk {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Lipetsk img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Odessa {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Odessa img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .London img {
+    border-radius: 8px;
+}
+
+.API .Madrid img {
+    border-radius: 8px;
+}
+
+.API .New_York img {
+    border-radius: 8px;
+}
+
+.API .Shymkent img {
+    border-radius: 8px;
+}
+
+.API .Lipetsk img {
+    border-radius: 8px;
+}
+
+.API .Odessa img {
+    border-radius: 8px;
+}
+
+.API .London span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Madrid span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .New_York span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Shymkent span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Lipetsk span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Odessa span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .London {
+    width: 100%;
+}
+
+.API .Madrid {
+    width: 100%;
+}
+
+.API .New_York {
+    width: 100%;
+}
+
+.API .Shymkent {
+    width: 100%;
+}
+
+.API .Lipetsk {
+    width: 100%;
+}
+
+.API .Odessa {
+    width: 100%;
+}
+
+.API .London span {
+    font-size: 1.05rem;
+}
+
+.API .Madrid span {
+    font-size: 1.05rem;
+}
+
+.API .New_York span {
+    font-size: 1.05rem;
+}
+
+.API .Shymkent span {
+    font-size: 1.05rem;
+}
+
+.API .Lipetsk span {
+    font-size: 1.05rem;
+}
+
+.API .Odessa span {
+    font-size: 1.05rem;
+}
+
+
